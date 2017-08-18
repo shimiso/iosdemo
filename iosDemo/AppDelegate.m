@@ -14,9 +14,17 @@
 
 @implementation AppDelegate
 
-
+//程序框架初始化成功后调用此函数
+//整个ios开发的入口函数
+//所有程序里面只有一个window
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    //UIWindow也是继承于UIView,它是一个特殊的UIView
+    //UIScreen表示屏幕硬件的表示类
+    //mainScreen 获得主屏幕的设备信息
+    //bounds 表示屏幕的宽高值
+    self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     return YES;
 }
 
