@@ -100,18 +100,43 @@
 
 }
 
+//当视图控制器第一次被加载显示视图时,调用此函数,只加载一次
+//布局初始化视图来使用,初始化资源
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
+    NSLog(@"第一次加载视图");
     [self createUIView];
 }
 
+//当视图控制器的视图即将显示时,调用此函数,每次视图显示都会被调用
+//视图分为:1.显示前(不显示) 2.正在处于显示状态 3.已经被隐藏
+//参数:表示是否用动画切换显示
+-(void) viewWillAppear:(BOOL)animated{
+    NSLog(@"视图即将要显示");
+}
+//当视图已经显示到屏幕后的瞬间调用此函数
+-(void) viewDidAppear:(BOOL)animated{
+    NSLog(@"视图显示");
+}
 
+//糊涂即将消失时调用此函数
+//参数:是否用动画切换后消失
+//当前状态:视图还显示在屏幕上
+-(void) viewWillDisappear:(BOOL)animated{
+     NSLog(@"视图即将消失");
+}
+
+//当前视图已经从屏幕上消失
+-(void) viewDidDisappear:(BOOL)animated{
+    NSLog(@"视图消失");
+}
+
+//当系统内存过低时,会发起警告信息,调用此函数
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-   
+    NSLog(@"内存过低!");
 }
 
 

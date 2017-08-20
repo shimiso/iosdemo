@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -25,6 +26,20 @@
     //mainScreen 获得主屏幕的设备信息
     //bounds 表示屏幕的宽高值
     self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    //创建一个视图控制器作为UIWindow的根视图控制器
+    //self.window.rootViewController =[[UIViewController alloc] init];
+    ViewController* vcRoot = [[ViewController alloc] init];
+    //视图控制器用来管理和处理界面的逻辑类对象
+    //程序启动前必须对根视图控制器赋值,否则报错
+    self.window.rootViewController = vcRoot;
+    self.window.backgroundColor = [UIColor whiteColor];
+//    
+//    UIView* view = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
+//    view.backgroundColor = [UIColor orangeColor];
+//    [self.window addSubview:view];
+    
+    //使window作为主视图并显示到屏幕上
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					A5AE4FBF1F46CAA4009881F1 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = P7MDK394YA;
 						ProvisioningStyle = Automatic;
 					};
 					A5AE4FD81F46CAA4009881F1 = {
@@ -426,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P7MDK394YA;
 				INFOPLIST_FILE = iosDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hx.iosDemo;
@@ -437,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = P7MDK394YA;
 				INFOPLIST_FILE = iosDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hx.iosDemo;
@@ -509,6 +512,7 @@
 				A5AE4FEF1F46CAA4009881F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5AE4FF01F46CAA4009881F1 /* Build configuration list for PBXNativeTarget "iosDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +521,7 @@
 				A5AE4FF21F46CAA4009881F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A5AE4FF31F46CAA4009881F1 /* Build configuration list for PBXNativeTarget "iosDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +530,7 @@
 				A5AE4FF51F46CAA4009881F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
